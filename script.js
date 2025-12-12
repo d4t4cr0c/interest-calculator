@@ -60,9 +60,6 @@ function displayResults(annualizedRate, finalAmount) {
     // Format and display final amount
     const finalAmountElement = document.getElementById('final-amount');
     finalAmountElement.textContent = '$' + finalAmount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-
-    // Smooth scroll to results
-    resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 // Add input validation for numbers only

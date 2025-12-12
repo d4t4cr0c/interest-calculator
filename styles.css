@@ -91,10 +91,13 @@ button:active {
     margin-top: 30px;
     padding-top: 30px;
     border-top: 2px solid #e0e0e0;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
 }
 
 .results.hidden {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .result-item {
